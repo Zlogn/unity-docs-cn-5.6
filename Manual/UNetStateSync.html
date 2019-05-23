@@ -1,0 +1,389 @@
+<!DOCTYPE html><html class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MC35ML');
+    </script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="状态同步 - Unity Manual">
+<title>状态同步 - Unity Manual</title>
+<meta name="description" content="State Synchronization is done from the Server to Remote Clients. The local client does not have data serialized to it, since it shares the scene with the server. Any data serialized to a local client would be redundant. SyncVar hooks however are called on local clients.">
+<meta property="og:description" content="State Synchronization is done from the Server to Remote Clients. The local client does not have data serialized to it, since it shares the scene with the server. Any data serialized to a local client would be redundant. SyncVar hooks however are called on local clients.">
+<meta name="author" content="Unity Technologies">
+<link rel="shortcut icon" href="../StaticFiles/images/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../StaticFiles/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../StaticFiles/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../StaticFiles/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../StaticFiles/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../StaticFiles/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" href="../StaticFiles/images/favicons/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#222c37">
+<meta name="msapplication-TileImage" content="../StaticFiles/images/favicons/tileicon-144x144.png">
+<script>
+      var docs_type = 'Manual';
+      var lang = 'zh_CN';
+      var page = 'UNetStateSync';
+      if(!page) page = 'index';
+      var version = '560';
+      var docs_versions = [{version: '2019.1',version_string: '2019.1'},{version: '2018.3',version_string: '2018.3'},{version: '2018.2',version_string: '2018.2'},{version: '2018.1',version_string: '2018.1'},{version: '2017.4',version_string: '2017.4'},{version: '2017.3',version_string: '2017.3'},{version: '2017.2',version_string: '2017.2'},{version: '2017.1',version_string: '2017.1'},{version: '5.6',version_string: '560'},{version: '5.5',version_string: '550'},{version: '5.4',version_string: '540'},{version: '5.3',version_string: '530'},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
+<link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
+</head>
+<body>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MC35ML" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="header-wrapper">
+<div id="header" class="header"><div class="content">
+<div class="spacer"><div class="menu">
+<div id="nav-open" for="nav-input"><span></span></div>
+<div class="logo"><a href="http://docs.unity3d.com"></a></div>
+<div class="search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
+</form></div>
+<ul class="menu-items">
+<li class="menu-item"><a href="../Manual/index.html" class="selected">Manual</a></li>
+<li class="menu-item"><a href="../ScriptReference/index.html" class="">Scripting API</a></li>
+</ul>
+</div></div>
+<div class="more">
+<div class="filler"></div>
+<ul><li><a href="https://unity3d.com/">
+                unity3d.com
+              </a></li></ul>
+</div>
+</div></div>
+<div class="toolbar"><div class="content">
+<div class="version-switcher">
+<div class="current toggle" data-target=".version-list"><div class="version-number">
+<div class="d-inline-block">
+          Version:
+          <b>5.6</b>
+</div>
+<div class="d-inline-block arrow"></div>
+</div></div>
+<div class="version-list" style="display:none;"><ul>
+<li><a class="docs_version_url_2019.1" href="/zh_CN/2019.1/Manual/UNetStateSync.html">2019.1</a></li>
+<li><a class="docs_version_url_2018.3" href="/zh_CN/2018.3/Manual/UNetStateSync.html">2018.3</a></li>
+<li><a class="docs_version_url_2018.2" href="/zh_CN/2018.2/Manual/UNetStateSync.html">2018.2</a></li>
+<li><a class="docs_version_url_2018.1" href="/zh_CN/2018.1/Manual/UNetStateSync.html">2018.1</a></li>
+<li><a class="docs_version_url_2017.4" href="/zh_CN/2017.4/Manual/UNetStateSync.html">2017.4</a></li>
+<li><a class="docs_version_url_2017.3" href="/zh_CN/2017.3/Manual/UNetStateSync.html">2017.3</a></li>
+<li><a class="docs_version_url_2017.2" href="/zh_CN/2017.2/Manual/UNetStateSync.html">2017.2</a></li>
+<li><a class="docs_version_url_2017.1" href="/zh_CN/2017.1/Manual/UNetStateSync.html">2017.1</a></li>
+<li><a class="docs_version_url_560" href="/zh_CN/560/Manual/UNetStateSync.html">5.6</a></li>
+<li><a class="docs_version_url_550" href="/zh_CN/550/Manual/UNetStateSync.html">5.5</a></li>
+<li><a class="docs_version_url_540" href="/zh_CN/540/Manual/UNetStateSync.html">5.4</a></li>
+<li><a class="docs_version_url_530" href="/zh_CN/530/Manual/UNetStateSync.html">5.3</a></li>
+</ul></div>
+</div>
+<ul class="nav-menu-items">
+<li class="menu-item"><a href="../Manual/index.html" class="selected">Manual</a></li>
+<li class="menu-item"><a href="../ScriptReference/index.html" class="">Scripting API</a></li>
+</ul>
+<div class="lang-switcher">
+<div class="current toggle" data-target=".lang-list">
+<div class="lbl">Language:
+        <span class="b">中文</span>
+</div>
+<div class="arrow"></div>
+</div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a data-lang="en" href="/560/Documentation/Manual/UNetStateSync.html">English</a></li>
+<li><a data-lang="ja" href="/ja/560/Manual/UNetStateSync.html">日本語</a></li>
+<li><a data-lang="es" href="/es/560/Manual/UNetStateSync.html">Español</a></li>
+<li><a data-lang="kr" href="/kr/560/Manual/UNetStateSync.html">한국어</a></li>
+</ul></div>
+</div>
+</div></div>
+</div>
+<div id="master-wrapper" class="master-wrapper clear">
+<div id="sidebar" class="sidebar hidden"><div class="sidebar-wrap"><div class="content"><div class="sidebar-menu"><div class="toc">
+<h2>Manual</h2>
+<div class="version-switcher">
+<div class="current toggle" data-target=".version-list"><div class="version-number">
+<div class="d-inline-block">
+          Version:
+          <b>5.6</b>
+</div>
+<div class="d-inline-block arrow"></div>
+</div></div>
+<div class="version-list" style="display:none;"><ul>
+<li><a class="docs_version_url_2019.1" href="/zh_CN/2019.1/Manual/UNetStateSync.html">2019.1</a></li>
+<li><a class="docs_version_url_2018.3" href="/zh_CN/2018.3/Manual/UNetStateSync.html">2018.3</a></li>
+<li><a class="docs_version_url_2018.2" href="/zh_CN/2018.2/Manual/UNetStateSync.html">2018.2</a></li>
+<li><a class="docs_version_url_2018.1" href="/zh_CN/2018.1/Manual/UNetStateSync.html">2018.1</a></li>
+<li><a class="docs_version_url_2017.4" href="/zh_CN/2017.4/Manual/UNetStateSync.html">2017.4</a></li>
+<li><a class="docs_version_url_2017.3" href="/zh_CN/2017.3/Manual/UNetStateSync.html">2017.3</a></li>
+<li><a class="docs_version_url_2017.2" href="/zh_CN/2017.2/Manual/UNetStateSync.html">2017.2</a></li>
+<li><a class="docs_version_url_2017.1" href="/zh_CN/2017.1/Manual/UNetStateSync.html">2017.1</a></li>
+<li><a class="docs_version_url_560" href="/zh_CN/560/Manual/UNetStateSync.html">5.6</a></li>
+<li><a class="docs_version_url_550" href="/zh_CN/550/Manual/UNetStateSync.html">5.5</a></li>
+<li><a class="docs_version_url_540" href="/zh_CN/540/Manual/UNetStateSync.html">5.4</a></li>
+<li><a class="docs_version_url_530" href="/zh_CN/530/Manual/UNetStateSync.html">5.3</a></li>
+</ul></div>
+</div>
+<div class="clear"></div>
+</div></div></div></div></div>
+<div id="content-wrap" class="content-wrap opened-sidebar"><div class="content-block"><div class="content">
+<div class="section">
+<div class="breadcrumbs clear"><ul>
+<li><a href="UnityManual.html">Unity User Manual (5.6)</a></li>
+<li><a href="UNet.html">多玩家和联网</a></li>
+<li><a href="UNetOverview.html">Networking Overview</a></li>
+<li><a href="UNetUsingHLAPI.html">The High Level API</a></li>
+<li>状态同步</li>
+</ul></div>
+<div class="mb20"><div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="UNetCustomSpawning.html"></a></span><div class="tip">Custom Spawn Functions</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="UNetActions.html"></a></span><div class="tip">远程操作</div>
+</div>
+</div></div>
+<h1>状态同步</h1>
+<!--BeginSwitchLink--><!--EndSwitchLink-->
+<div class="clear"></div>
+
+<p>State Synchronization is done from the Server to Remote Clients. The local client does not have data serialized to it, since it shares the scene with the server. Any data serialized to a local client would be redundant. SyncVar hooks however are called on local clients.</p>
+
+<p>Data is not synchronized from remote clients to the server. This is job of Commands.</p>
+
+<h2>SyncVars</h2>
+
+<p>SyncVars are member variables of NetworkBehaviour scripts that are synchronized from the server to clients. When an object is spawned, or a new player joins a game in progress, they are sent the latest state of all SyncVars on networked objects that are visible to them. Member variables are made into SyncVars by using the [SyncVar] custom attribute:</p>
+
+<pre><code>class Player : NetworkBehaviour
+{
+
+    [SyncVar]
+    int health;
+
+    public void TakeDamage(int amount)
+    {
+        if (!isServer)
+            return;
+
+        health -= amount;
+    }
+}
+</code></pre>
+
+<p>The state of SyncVars is applied to objects on clients before OnStartClient() is called, so the state of the object is guaranteed to be up-to-date inside OnStartClient().</p>
+
+<p>SyncVars can be basic types such as integers, strings and floats. They can also be Unity types such as Vector3 and user-defined structs, but updates for struct SyncVars are sent as monolithic updates, not incremental changes if fields within a struct change. There can be up to 32 SyncVars on a single NetworkBehaviour script - this includes SyncLists.</p>
+
+<p>SycnVar updates are sent automatically by the server when the value of a SyncVar changes. There is no need to perform any manual dirtying of fields for SyncVars.</p>
+
+<h2>SyncLists</h2>
+
+<p>SyncLists are like SyncVars but they are lists of values instead of individual values. SyncList contents are included in initial state updates with SyncVar state. SyncLists do not require the SyncVar attributes, they are specific classes. There are built-in SyncList types for basic types:</p>
+
+<ul>
+<li>SyncListString</li>
+<li>SyncListFloat</li>
+<li>SyncListInt</li>
+<li>SyncListUInt</li>
+<li>SyncListBool</li>
+</ul>
+
+<p>There is also SyncListStruct which can be used for lists of user-defined structs. The struct used SyncListStruct derived class can contain members of basic types, arrays, and common Unity types. They cannot contain complex classes or generic containers.</p>
+
+<p>SyncLists have a SyncListChanged delegate named Callback that allows clients to be notified when the contents of the list change. This delegate is called with the type of operation that occurred, and th eindex of the item that the operation was for.</p>
+
+<pre><code>public class MyScript : NetworkBehaviour
+{
+    public struct Buf
+    {
+        public int id;
+        public string name;
+        public float timer;
+    };
+            
+    public class TestBufs : SyncListStruct&lt;Buf&gt; {}
+    TestBufs m_bufs = new TestBufs();
+    
+    void BufChanged(SyncListStruct&lt;Buf&gt;.Operation op, int itemIndex)
+    {
+        Debug.Log("buf changed:" + op);
+    }
+    
+    void Start()
+    {
+        m_bufs.Callback = BufChanged;
+    }
+}
+</code></pre>
+
+<h2>Custom Serialization Functions</h2>
+
+<p>Often the use of SyncVars is enough for scripts to serialize their state to clients, but some cases require more complex serialization code. The virtual functions on NetworkBehaviour that are used for SyncVar serialization can be implmented by developers to perform their own custom serialization. These functions are:</p>
+
+<pre><code>public virtual bool OnSerialize(NetworkWriter writer, bool initialState);
+public virtual void OnDeSerialize(NetworkReader reader, bool initialState);
+</code></pre>
+
+<p>The initialState flag is useful to differentiate between the first time an object is serialized and when incremental updates can be sent. The first time an object is sent to a client, it must include a full state snapshot, but subsequent updates can save on bandwidth by including only incremental changes. Note that SyncVar hook fucntion are not called when initialState is true, only for incremental updates.</p>
+
+<p>If a class has SyncVars, then implementations of these functions are added automatically to the class. So a class that has SyncVars cannot also have custom serialization functions.</p>
+
+<p>The OnSerialize function should return true to indicate that an update should be sent. If it returns true, then the dirty bits for that script are set to zero, if it returns false then the dirty bits are not changed. This allows multiple changes to a script to be accumulated over time and sent when the system is ready, instead of every frame.</p>
+
+<h2>Serialization Flow</h2>
+
+<p>Game objects with the NetworkIdentity component can have multiple scripts derived from NetworkBehaviour. The flow for serializing these objects is:</p>
+
+<p>在服务器上：</p>
+
+<ul>
+<li>Each NetworkBehaviour has a dirty mask. This mask is available inside OnSerialize as syncVarDirtyBits</li>
+<li>Each SyncVar in a NetworkBehaviour script is assigned a bit in the dirty mask.</li>
+<li>更改 SyncVar 的值会导致在脏掩码中设置该 SyncVar 的位</li>
+<li>Alternatively, calling SetDirtyBit() writes directly to the dirty mask</li>
+<li>NetworkIdentity objects are checked on the server as part of it’s update loop</li>
+<li>If any NetworkBehaviours on a NetworkIdentity are dirty, then an UpdateVars packet is created for that object</li>
+<li>The UpdateVars packet is populated by calling OnSerialize on each NetworkBehaviour on the object</li>
+<li>NetworkBehaviours that are NOT dirty write a zero to the packet for their dirty bits</li>
+<li>NetworkBehaviours that are dirty write their dirty mask, then the values for the SyncVars that have changed</li>
+<li>If OnSerialize returns true for a NetworkBehaviour, the dirty mask is reset for that NetworkBehaviour, so it will not send again until it’s value changes.</li>
+<li>The UpdateVars packet is sent to ready clients that are observing the object</li>
+</ul>
+
+<p>在客户端上：</p>
+
+<ul>
+<li>an UpdateVars packet is received for an object</li>
+<li>The OnDeserialize function is called for each NetworkBehaviour script on the object</li>
+<li>Each NetworkBehaviour script on the object reads a dirty mask.</li>
+<li>If the dirty mask for a NetworkBehaviour is zero, the OnDeserialize functions returns without reading any more</li>
+<li>If the dirty mask is non-zero value, then the OnDeserialize function reads the values for the SyncVars that correspond to the dirty bits that are set</li>
+<li>如果存在 SyncVar 挂钩函数，则会使用从流中读取的值调用这些函数。</li>
+</ul>
+
+<p>因此，对于以下脚本：</p>
+
+<pre><code>public class data : NetworkBehaviour
+{
+
+    [SyncVar]
+    public int int1 = 66;
+
+    [SyncVar]
+    public int int2 = 23487;
+
+    [SyncVar]
+    public string MyString = "esfdsagsdfgsdgdsfg";
+}
+</code></pre>
+
+<p>The generated OnSerialize function is something like:</p>
+
+<pre><code>public override bool OnSerialize(NetworkWriter writer, bool forceAll)
+{
+    if (forceAll)
+    {
+        // the first time an object is sent to a client, send all the data (and no dirty bits)
+        writer.WritePackedUInt32((uint)this.int1);
+        writer.WritePackedUInt32((uint)this.int2);
+        writer.Write(this.MyString);
+        return true;
+    }
+    bool wroteSyncVar = false;
+    if ((base.get_syncVarDirtyBits() &amp; 1u) != 0u)
+    {
+        if (!wroteSyncVar)
+        {
+            // write dirty bits if this is the first SyncVar written
+            writer.WritePackedUInt32(base.get_syncVarDirtyBits());
+            wroteSyncVar = true;
+        }
+        writer.WritePackedUInt32((uint)this.int1);
+    }
+    if ((base.get_syncVarDirtyBits() &amp; 2u) != 0u)
+    {
+        if (!wroteSyncVar)
+        {
+            // write dirty bits if this is the first SyncVar written
+            writer.WritePackedUInt32(base.get_syncVarDirtyBits());
+            wroteSyncVar = true;
+        }
+        writer.WritePackedUInt32((uint)this.int2);
+    }
+    if ((base.get_syncVarDirtyBits() &amp; 4u) != 0u)
+    {
+        if (!wroteSyncVar)
+        {
+            // write dirty bits if this is the first SyncVar written
+            writer.WritePackedUInt32(base.get_syncVarDirtyBits());
+            wroteSyncVar = true;
+        }
+        writer.Write(this.MyString);
+    }
+
+    if (!wroteSyncVar)
+    {
+        // write zero dirty bits if no SyncVars were written
+        writer.WritePackedUInt32(0);
+    }
+    return wroteSyncVar;
+}
+</code></pre>
+
+<p>And the OnDeserialize function is something like:</p>
+
+<pre><code>public override void OnDeserialize(NetworkReader reader, bool initialState)
+{
+    if (initialState)
+    {
+        this.int1 = (int)reader.ReadPackedUInt32();
+        this.int2 = (int)reader.ReadPackedUInt32();
+        this.MyString = reader.ReadString();
+        return;
+    }
+    int num = (int)reader.ReadPackedUInt32();
+    if ((num &amp; 1) != 0)
+    {
+        this.int1 = (int)reader.ReadPackedUInt32();
+    }
+    if ((num &amp; 2) != 0)
+    {
+        this.int2 = (int)reader.ReadPackedUInt32();
+    }
+    if ((num &amp; 4) != 0)
+    {
+        this.MyString = reader.ReadString();
+    }
+}
+</code></pre>
+
+<p>If a NetworkBehaviour has a base class that also has serialization functions, the base class functions should also be called.</p>
+
+<p>Note that the UpdateVar packets created for object state updates may be aggregated in buffers before being sent to the client, so a single transport layer packet may contain updates for multiple objects.</p>
+<div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="UNetCustomSpawning.html"></a></span><div class="tip">Custom Spawn Functions</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="UNetActions.html"></a></span><div class="tip">远程操作</div>
+</div>
+</div>
+</div>
+<div class="footer-wrapper">
+<div class="footer clear">
+<div class="copy">Copyright © 2017 Unity Technologies. Publication 5.6</div>
+<div class="menu">
+<a href="http://unity3d.com/learn">Tutorials</a><a href="http://answers.unity3d.com">Community Answers</a><a href="https://support.unity3d.com/hc/en-us">Knowledge Base</a><a href="http://forum.unity3d.com">Forums</a><a href="http://unity3d.com/asset-store">Asset Store</a>
+</div>
+</div>
+<div></div>
+</div>
+</div></div></div>
+</div>
+</body>
+</html>
