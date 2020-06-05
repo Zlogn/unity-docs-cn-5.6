@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="no-js">
+<!DOCTYPE html><html class="no-js" lang="zh-cn">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -11,10 +11,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Input types - Unity Manual">
-<title>Input types - Unity Manual</title>
-<meta name="description" content="Input on HoloLens is different from other platforms. Unlike other platforms, the primary means of interaction are three non-traditional systems:">
-<meta property="og:description" content="Input on HoloLens is different from other platforms. Unlike other platforms, the primary means of interaction are three non-traditional systems:">
+<meta property="og:title" content="输入类型 - Unity 手册">
+<title>输入类型 - Unity 手册</title>
+<meta name="description" content="HoloLens 上的输入与其他平台不同。与其他平台不同，主要的交互方式是三个非传统系统：">
+<meta property="og:description" content="HoloLens 上的输入与其他平台不同。与其他平台不同，主要的交互方式是三个非传统系统：">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="../StaticFiles/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -28,13 +28,20 @@
 <meta name="msapplication-TileImage" content="../StaticFiles/images/favicons/tileicon-144x144.png">
 <script>
       var docs_type = 'Manual';
-      var lang = 'zh_CN';
+      var lang = 'cn';
       var page = 'windowsholographic-input';
       if(!page) page = 'index';
       var version = '560';
-      var docs_versions = [{version: '2019.1',version_string: '2019.1'},{version: '2018.4',version_string: '2018.4'},{version: '2018.3',version_string: '2018.3'},{version: '2018.2',version_string: '2018.2'},{version: '2018.1',version_string: '2018.1'},{version: '2017.4',version_string: '2017.4'},{version: '2017.3',version_string: '2017.3'},{version: '2017.2',version_string: '2017.2'},{version: '2017.1',version_string: '2017.1'},{version: '5.6',version_string: '560'},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+      var docs_versions = [{version: '2020.1',version_string: '2020.1'},{version: '2019.3',version_string: '2019.3'},{version: '2019.2',version_string: '2019.2'},{version: '2019.1',version_string: '2019.1'},{version: '2018.4',version_string: '2018.4'},{version: '2018.3',version_string: '2018.3'},{version: '2018.2',version_string: '2018.2'},{version: '2018.1',version_string: '2018.1'},{version: '2017.4',version_string: '2017.4'},{version: '2017.3',version_string: '2017.3'},{version: '2017.2',version_string: '2017.2'},{version: '2017.1',version_string: '2017.1'},{version: '5.6',version_string: '560'},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
+<link rel="canonical" href="https://docs.unity3d.com/cn/560/Manual/windowsholographic-input.html">
+<link rel="alternate" href="https://docs.unity3d.com/en/560/Manual/windowsholographic-input.html" hreflang="en">
+<link rel="alternate" href="https://docs.unity3d.com/ja/560/Manual/windowsholographic-input.html" hreflang="ja">
+<link rel="alternate" href="https://docs.unity3d.com/es/560/Manual/windowsholographic-input.html" hreflang="es">
+<link rel="alternate" href="https://docs.unity3d.com/kr/560/Manual/windowsholographic-input.html" hreflang="ko">
+<link rel="alternate" href="https://docs.unity3d.com/ru/560/Manual/windowsholographic-input.html" hreflang="ru">
+<link rel="alternate" href="https://docs.unity3d.com/560/Documentation/Manual/windowsholographic-input.html" hreflang="x-default">
 </head>
 <body>
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5V25JL6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -44,11 +51,11 @@
 <div id="nav-open" for="nav-input"><span></span></div>
 <div class="logo"><a href="http://docs.unity3d.com"></a></div>
 <div class="search-form"><form action="30_search.html" method="get" class="apisearch">
-<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
+<input type="text" name="q" placeholder="搜索手册..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
 </form></div>
 <ul class="menu-items">
-<li class="menu-item"><a href="../Manual/index.html" class="selected">Manual</a></li>
-<li class="menu-item"><a href="../ScriptReference/index.html" class="">Scripting API</a></li>
+<li class="menu-item"><a href="../Manual/index.html" class="selected">手册</a></li>
+<li class="menu-item"><a href="../ScriptReference/index.html" class="">脚本 API</a></li>
 </ul>
 </div></div>
 <div class="more">
@@ -68,25 +75,28 @@
 <div class="d-inline-block arrow"></div>
 </div></div>
 <div class="version-list" style="display:none;"><ul>
-<li><a class="docs_version_url_2019.1" href="/zh_CN/2019.1/Manual/windowsholographic-input.html">2019.1</a></li>
-<li><a class="docs_version_url_2018.4" href="/zh_CN/2018.4/Manual/windowsholographic-input.html">2018.4</a></li>
-<li><a class="docs_version_url_2018.3" href="/zh_CN/2018.3/Manual/windowsholographic-input.html">2018.3</a></li>
-<li><a class="docs_version_url_2018.2" href="/zh_CN/2018.2/Manual/windowsholographic-input.html">2018.2</a></li>
-<li><a class="docs_version_url_2018.1" href="/zh_CN/2018.1/Manual/windowsholographic-input.html">2018.1</a></li>
-<li><a class="docs_version_url_2017.4" href="/zh_CN/2017.4/Manual/windowsholographic-input.html">2017.4</a></li>
-<li><a class="docs_version_url_2017.3" href="/zh_CN/2017.3/Manual/windowsholographic-input.html">2017.3</a></li>
-<li><a class="docs_version_url_2017.2" href="/zh_CN/2017.2/Manual/windowsholographic-input.html">2017.2</a></li>
-<li><a class="docs_version_url_2017.1" href="/zh_CN/2017.1/Manual/windowsholographic-input.html">2017.1</a></li>
-<li><a class="docs_version_url_560" href="/zh_CN/560/Manual/windowsholographic-input.html">5.6</a></li>
+<li><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/windowsholographic-input.html">2020.1</a></li>
+<li><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/windowsholographic-input.html">2019.3</a></li>
+<li><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/windowsholographic-input.html">2019.2</a></li>
+<li><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/windowsholographic-input.html">2019.1</a></li>
+<li><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/windowsholographic-input.html">2018.4</a></li>
+<li><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/windowsholographic-input.html">2018.3</a></li>
+<li><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/windowsholographic-input.html">2018.2</a></li>
+<li><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/windowsholographic-input.html">2018.1</a></li>
+<li><a class="docs_version_url_2017.4" href="/cn/2017.4/Manual/windowsholographic-input.html">2017.4</a></li>
+<li><a class="docs_version_url_2017.3" href="/cn/2017.3/Manual/windowsholographic-input.html">2017.3</a></li>
+<li><a class="docs_version_url_2017.2" href="/cn/2017.2/Manual/windowsholographic-input.html">2017.2</a></li>
+<li><a class="docs_version_url_2017.1" href="/cn/2017.1/Manual/windowsholographic-input.html">2017.1</a></li>
+<li><a class="docs_version_url_560" href="/cn/560/Manual/windowsholographic-input.html">5.6</a></li>
 </ul></div>
 </div>
 <ul class="nav-menu-items">
-<li class="menu-item"><a href="../Manual/index.html" class="selected">Manual</a></li>
-<li class="menu-item"><a href="../ScriptReference/index.html" class="">Scripting API</a></li>
+<li class="menu-item"><a href="../Manual/index.html" class="selected">手册</a></li>
+<li class="menu-item"><a href="../ScriptReference/index.html" class="">脚本 API</a></li>
 </ul>
 <div class="lang-switcher">
 <div class="current toggle" data-target=".lang-list">
-<div class="lbl">Language:
+<div class="lbl">语言:
         <span class="b">中文</span>
 </div>
 <div class="arrow"></div>
@@ -96,13 +106,14 @@
 <li><a data-lang="ja" href="/ja/560/Manual/windowsholographic-input.html">日本語</a></li>
 <li><a data-lang="es" href="/es/560/Manual/windowsholographic-input.html">Español</a></li>
 <li><a data-lang="kr" href="/kr/560/Manual/windowsholographic-input.html">한국어</a></li>
+<li><a data-lang="ru" href="/ru/560/Manual/windowsholographic-input.html">Русский</a></li>
 </ul></div>
 </div>
 </div></div>
 </div>
 <div id="master-wrapper" class="master-wrapper clear">
 <div id="sidebar" class="sidebar hidden"><div class="sidebar-wrap"><div class="content"><div class="sidebar-menu"><div class="toc">
-<h2>Manual</h2>
+<h2>手册</h2>
 <div class="version-switcher">
 <div class="current toggle" data-target=".version-list"><div class="version-number">
 <div class="d-inline-block">
@@ -112,16 +123,19 @@
 <div class="d-inline-block arrow"></div>
 </div></div>
 <div class="version-list" style="display:none;"><ul>
-<li><a class="docs_version_url_2019.1" href="/zh_CN/2019.1/Manual/windowsholographic-input.html">2019.1</a></li>
-<li><a class="docs_version_url_2018.4" href="/zh_CN/2018.4/Manual/windowsholographic-input.html">2018.4</a></li>
-<li><a class="docs_version_url_2018.3" href="/zh_CN/2018.3/Manual/windowsholographic-input.html">2018.3</a></li>
-<li><a class="docs_version_url_2018.2" href="/zh_CN/2018.2/Manual/windowsholographic-input.html">2018.2</a></li>
-<li><a class="docs_version_url_2018.1" href="/zh_CN/2018.1/Manual/windowsholographic-input.html">2018.1</a></li>
-<li><a class="docs_version_url_2017.4" href="/zh_CN/2017.4/Manual/windowsholographic-input.html">2017.4</a></li>
-<li><a class="docs_version_url_2017.3" href="/zh_CN/2017.3/Manual/windowsholographic-input.html">2017.3</a></li>
-<li><a class="docs_version_url_2017.2" href="/zh_CN/2017.2/Manual/windowsholographic-input.html">2017.2</a></li>
-<li><a class="docs_version_url_2017.1" href="/zh_CN/2017.1/Manual/windowsholographic-input.html">2017.1</a></li>
-<li><a class="docs_version_url_560" href="/zh_CN/560/Manual/windowsholographic-input.html">5.6</a></li>
+<li><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/windowsholographic-input.html">2020.1</a></li>
+<li><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/windowsholographic-input.html">2019.3</a></li>
+<li><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/windowsholographic-input.html">2019.2</a></li>
+<li><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/windowsholographic-input.html">2019.1</a></li>
+<li><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/windowsholographic-input.html">2018.4</a></li>
+<li><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/windowsholographic-input.html">2018.3</a></li>
+<li><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/windowsholographic-input.html">2018.2</a></li>
+<li><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/windowsholographic-input.html">2018.1</a></li>
+<li><a class="docs_version_url_2017.4" href="/cn/2017.4/Manual/windowsholographic-input.html">2017.4</a></li>
+<li><a class="docs_version_url_2017.3" href="/cn/2017.3/Manual/windowsholographic-input.html">2017.3</a></li>
+<li><a class="docs_version_url_2017.2" href="/cn/2017.2/Manual/windowsholographic-input.html">2017.2</a></li>
+<li><a class="docs_version_url_2017.1" href="/cn/2017.1/Manual/windowsholographic-input.html">2017.1</a></li>
+<li><a class="docs_version_url_560" href="/cn/560/Manual/windowsholographic-input.html">5.6</a></li>
 </ul></div>
 </div>
 <div class="clear"></div>
@@ -133,78 +147,65 @@
 <li><a href="PlatformSpecific.html">特定于平台的信息</a></li>
 <li><a href="Windows.html">Windows</a></li>
 <li><a href="windowsholographic.html">Windows Holographic</a></li>
-<li>Input types</li>
+<li>输入类型</li>
 </ul></div>
 <div class="mb20"><div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
-<span class="prev"><a href="windowsholographic-startup.html"></a></span><div class="tip">Running your first application</div>
+<span class="prev"><a href="windowsholographic-startup.html"></a></span><div class="tip">运行您的第一个应用程序</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="windowsholographic-focuspoint.html"></a></span><div class="tip">Focus Point</div>
+<span class="next"><a href="windowsholographic-focuspoint.html"></a></span><div class="tip">焦点</div>
 </div>
 </div></div>
-<h1>Input types</h1>
+<h1>输入类型</h1>
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<p>Input on HoloLens is different from other platforms. Unlike other platforms, the primary means of interaction are three non-traditional systems:</p>
+<p>HoloLens 上的输入与其他平台不同。与其他平台不同，主要的交互方式是三个非传统系统：</p>
 
-<ol>
-<li>
-<strong>Gaze</strong>: Where the user is looking in the world.</li>
-<li>
-<strong>Gesture</strong>: Hand signals used to signify commands to the system.</li>
-<li>
-<strong>Voice</strong>: Short, spoken commands, and longer free-form dictation.</li>
-</ol>
+<p>1.<strong>注视__：用户在世界中的注视位置。
+1.</strong>手势__：用于向系统呈现命令的手势信号。
+1.__语音__：简短的口头命令和更长的自由形式的听写。</p>
 
-<h2>Gaze</h2>
+<h2>注视</h2>
 
-<p>The <strong>Gaze</strong> refers to where the user is looking. On HoloLens, this is fairly precise and can be used to select GameObjects in the world. This can be used to direct commands at specific GameObjects rather than every GameObject in the Scene.</p>
+<p>__注视__是指用户的注视位置。在 HoloLens 上，这是相当精确的位置，可以用来选择世界中的游戏对象。使用此输入可以对场景中的特定游戏对象而非每个游戏对象发出命令。</p>
 
-<p>Microsoft provides useful documentation on <a href="https://dev.windows.com/en-us/holographic/gaze_indicator">Gaze indicator</a> and <a href="https://dev.windows.com/en-us/holographic/gaze_targeting">Gaze targeting</a> pages.</p>
+<p>Microsoft 在<a href="https://dev.windows.com/en-us/holographic/gaze_indicator">注视标记 (Gaze indicator)</a> 和<a href="https://dev.windows.com/en-us/holographic/gaze_targeting">注视定位 (Gaze targeting)</a> 页面上提供了有用的文档。</p>
 
-<h2>Gesture</h2>
+<h2>手势</h2>
 
-<p>A <strong>Gesture</strong> is a hand signal interpreted by the system. These can be used to represent commands. There are several built-in Gestures you can use in your application, as well as a generic API to recognize custom Gestures. Both built-in Gestures and custom Gestures (via API) are functional in Unity.</p>
+<p>__手势__是由系统解释的手势信号。这些可用于表示命令。系统提供了几种可在应用程序中使用的内置手势，以及用于识别自定义手势的通用 API。内置手势和自定义手势（通过 API 添加）在 Unity 中都可以使用。</p>
 
-<p>Built-in Gestures:</p>
+<p>内置手势：</p>
 
 <ul>
-<li>
-<strong>Tap</strong>: With a closed hand and extended thumb and forefinger, press thumb and forefinger together. This is commonly used as a select command on the HoloLens.</li>
-<li>
-<strong>Double Tap</strong>: Two Tap Gestures in rapid succession.</li>
-<li>
-<strong>Hold</strong>: A Tap Gesture, keeping the forefinger and thumb together for one second or more.</li>
-<li>
-<strong>Manipulation</strong>: A Hold Gesture, followed by a translation in space. Distances from the Hold position are reported in the Gesture.</li>
-<li>
-<strong>Navigation</strong>: A Hold gesture, followed by a translation in space. This may be constrained to one or more of the x, y, and z planes, and reports a value from –1 to 1 for each axis.</li>
+<li>__点击__：用一只闭合的手和伸展的拇指和食指，将拇指和食指按一起。这通常用作 HoloLens 上的选择命令。</li>
+<li>__双击__：快速连续两次点击手势。</li>
+<li>__保持__：点击手势，将食指和拇指保持在一起达到一秒或更长时间。</li>
+<li>__操作__：一个保持手势，然后是空间转换。在“手势”中会报告相对于保持位置的距离。</li>
+<li>__导航__：一个保持手势，然后是空间转换。这可以被约束到 x、y 和 z 平面中的一个或多个平面，并针对每个轴报告从 –1 到 1 的值。</li>
 </ul>
 
-<p>For more information about gestures, refer to Microsoft’s documentation on <a href="https://dev.windows.com/en-us/holographic/Gesture_design">Gesture design</a>.</p>
+<p>有关手势的更多信息，请参阅 Microsoft 的<a href="https://dev.windows.com/en-us/holographic/Gesture_design">手势设计 (Gesture design)</a> 文档。</p>
 
-<h2>Voice</h2>
+<h2>语音</h2>
 
-<p><strong>Voice</strong> input on HoloLens is provided by the Windows 10 API. Unity supports three styles of input:</p>
+<p>HoloLens 上的__语音__输入由 Windows 10 API 提供。Unity 支持三种输入形式：</p>
 
 <ul>
-<li>
-<strong>Keywords</strong>: Simple commands or phrases set up in code which generate events. This allows you to quickly add voice commands to an application where localization is not an issue. This functionality is provided by the <a href="../ScriptReference/Windows.Speech.KeywordRecognizer.html">KeywordRecognizer</a>.</li>
-<li>
-<strong>Grammars</strong>: A table of commands with semantic meaning which you can localize. Grammars are configured from an xml grammar file (.grxml). See Microsoft’s documentation on <a href="https://msdn.microsoft.com/en-us/library/ms873278.aspx">Creating Grammar Files</a> for more information on the file format. Grammar recognition functionality is provided by the <a href="../ScriptReference/Windows.Speech.GrammarRecognizer.html">GrammarRecognizer</a>.</li>
-<li>
-<strong>Dictation</strong>: A more free-form text-to-speech system that translates longer spoken input into text. Dictation recognition on the HoloLens is only active for short periods of time to prolong battery life. Dictation requires a working Internet connection and is provided by the <a href="../ScriptReference/Windows.Speech.DictationRecognizer.html">DictationRecognizer</a>.</li>
+<li>__关键字__：用于生成事件的简单命令或短语（在代码中设置）。这种情况下可快速将语音命令添加到应用程序（其中本地化不是问题）。此功能由 <a href="../ScriptReference/Windows.Speech.KeywordRecognizer.html">KeywordRecognizer</a> 提供。</li>
+<li>__语法__：可本地化的具有语义含义的命令表。语法是从 xml 语法文件 (.grxml) 配置的。请参阅 Microsoft 关于<a href="https://msdn.microsoft.com/en-us/library/ms873278.aspx">创建语法文件 (Creating Grammar Files)</a> 的文档以了解此文件格式的更多信息。语法识别功能由 <a href="../ScriptReference/Windows.Speech.GrammarRecognizer.html">GrammarRecognizer</a> 提供。</li>
+<li>__听写__：一种更自由的文本到语音转换系统，可将较长的语音输入转换为文本。为了延长电池续航时间，HoloLens 上的听写识别仅在短时间内有效。听写功能要求具备有效的互联网连接，并由 <a href="../ScriptReference/Windows.Speech.DictationRecognizer.html">DictationRecognizer</a> 提供。</li>
 </ul>
 
-<p>For more information about voice input, refer to Microsoft’s documentation on <a href="https://dev.windows.com/en-us/holographic/Voice_design">Voice design</a>.</p>
+<p>有关语音输入的更多信息，请参阅 Microsoft 的<a href="https://dev.windows.com/en-us/holographic/Voice_design">语音设计 (Voice design)</a> 文档。</p>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
-<span class="prev"><a href="windowsholographic-startup.html"></a></span><div class="tip">Running your first application</div>
+<span class="prev"><a href="windowsholographic-startup.html"></a></span><div class="tip">运行您的第一个应用程序</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="windowsholographic-focuspoint.html"></a></span><div class="tip">Focus Point</div>
+<span class="next"><a href="windowsholographic-focuspoint.html"></a></span><div class="tip">焦点</div>
 </div>
 </div>
 </div>
@@ -212,7 +213,7 @@
 <div class="footer clear">
 <div class="copy">Copyright © 2017 Unity Technologies. Publication 5.6</div>
 <div class="menu">
-<a href="http://unity3d.com/learn">Tutorials</a><a href="http://answers.unity3d.com">Community Answers</a><a href="https://support.unity3d.com/hc/en-us">Knowledge Base</a><a href="http://forum.unity3d.com">Forums</a><a href="http://unity3d.com/asset-store">Asset Store</a>
+<a href="http://unity3d.com/learn">教程</a><a href="http://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="http://forum.unity3d.com">论坛</a><a href="http://unity3d.com/asset-store">Asset Store</a>
 </div>
 </div>
 <div></div>

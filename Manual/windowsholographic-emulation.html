@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="no-js">
+<!DOCTYPE html><html class="no-js" lang="zh-cn">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -11,11 +11,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Holographic Emulation - Unity Manual">
-<title>Holographic Emulation - Unity Manual</title>
-<meta property="og:image" content="https://docs.unity3d.com/zh_CN/5.6/uploads/Main/HolographicEmulation-0.gif">
-<meta name="description" content="Holographic Emulation allows you to prototype, debug, and run Microsoft HoloLens projects directly in the Unity Editor rather than building and running the game every time you want to see the effect of a change. This vastly reduces time between iterations when developing holographic applications in Unity.">
-<meta property="og:description" content="Holographic Emulation allows you to prototype, debug, and run Microsoft HoloLens projects directly in the Unity Editor rather than building and running the game every time you want to see the effect of a change. This vastly reduces time between iterations when developing holographic applications in Unity.">
+<meta property="og:title" content="Holographic Emulation - Unity 手册">
+<title>Holographic Emulation - Unity 手册</title>
+<meta property="og:image" content="https://docs.unity3d.com/cn/5.6/uploads/Main/HolographicEmulation-0.gif">
+<meta name="description" content="Holographic Emulation（全息仿真）允许直接在 Unity Editor 中对 Microsoft HoloLens 项目进行原型设计、调试和运行，无需在每次希望查看更改效果时都要构建和运行游戏。这样可以极大缩短在 Unity 中开发全息应用程序时的迭代间隔时间。">
+<meta property="og:description" content="Holographic Emulation（全息仿真）允许直接在 Unity Editor 中对 Microsoft HoloLens 项目进行原型设计、调试和运行，无需在每次希望查看更改效果时都要构建和运行游戏。这样可以极大缩短在 Unity 中开发全息应用程序时的迭代间隔时间。">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="../StaticFiles/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -29,13 +29,20 @@
 <meta name="msapplication-TileImage" content="../StaticFiles/images/favicons/tileicon-144x144.png">
 <script>
       var docs_type = 'Manual';
-      var lang = 'zh_CN';
+      var lang = 'cn';
       var page = 'windowsholographic-emulation';
       if(!page) page = 'index';
       var version = '560';
-      var docs_versions = [{version: '2019.1',version_string: '2019.1'},{version: '2018.4',version_string: '2018.4'},{version: '2018.3',version_string: '2018.3'},{version: '2018.2',version_string: '2018.2'},{version: '2018.1',version_string: '2018.1'},{version: '2017.4',version_string: '2017.4'},{version: '2017.3',version_string: '2017.3'},{version: '2017.2',version_string: '2017.2'},{version: '2017.1',version_string: '2017.1'},{version: '5.6',version_string: '560'},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+      var docs_versions = [{version: '2020.1',version_string: '2020.1'},{version: '2019.3',version_string: '2019.3'},{version: '2019.2',version_string: '2019.2'},{version: '2019.1',version_string: '2019.1'},{version: '2018.4',version_string: '2018.4'},{version: '2018.3',version_string: '2018.3'},{version: '2018.2',version_string: '2018.2'},{version: '2018.1',version_string: '2018.1'},{version: '2017.4',version_string: '2017.4'},{version: '2017.3',version_string: '2017.3'},{version: '2017.2',version_string: '2017.2'},{version: '2017.1',version_string: '2017.1'},{version: '5.6',version_string: '560'},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
+<link rel="canonical" href="https://docs.unity3d.com/cn/560/Manual/windowsholographic-emulation.html">
+<link rel="alternate" href="https://docs.unity3d.com/en/560/Manual/windowsholographic-emulation.html" hreflang="en">
+<link rel="alternate" href="https://docs.unity3d.com/ja/560/Manual/windowsholographic-emulation.html" hreflang="ja">
+<link rel="alternate" href="https://docs.unity3d.com/es/560/Manual/windowsholographic-emulation.html" hreflang="es">
+<link rel="alternate" href="https://docs.unity3d.com/kr/560/Manual/windowsholographic-emulation.html" hreflang="ko">
+<link rel="alternate" href="https://docs.unity3d.com/ru/560/Manual/windowsholographic-emulation.html" hreflang="ru">
+<link rel="alternate" href="https://docs.unity3d.com/560/Documentation/Manual/windowsholographic-emulation.html" hreflang="x-default">
 </head>
 <body>
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5V25JL6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -45,11 +52,11 @@
 <div id="nav-open" for="nav-input"><span></span></div>
 <div class="logo"><a href="http://docs.unity3d.com"></a></div>
 <div class="search-form"><form action="30_search.html" method="get" class="apisearch">
-<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
+<input type="text" name="q" placeholder="搜索手册..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
 </form></div>
 <ul class="menu-items">
-<li class="menu-item"><a href="../Manual/index.html" class="selected">Manual</a></li>
-<li class="menu-item"><a href="../ScriptReference/index.html" class="">Scripting API</a></li>
+<li class="menu-item"><a href="../Manual/index.html" class="selected">手册</a></li>
+<li class="menu-item"><a href="../ScriptReference/index.html" class="">脚本 API</a></li>
 </ul>
 </div></div>
 <div class="more">
@@ -69,25 +76,28 @@
 <div class="d-inline-block arrow"></div>
 </div></div>
 <div class="version-list" style="display:none;"><ul>
-<li><a class="docs_version_url_2019.1" href="/zh_CN/2019.1/Manual/windowsholographic-emulation.html">2019.1</a></li>
-<li><a class="docs_version_url_2018.4" href="/zh_CN/2018.4/Manual/windowsholographic-emulation.html">2018.4</a></li>
-<li><a class="docs_version_url_2018.3" href="/zh_CN/2018.3/Manual/windowsholographic-emulation.html">2018.3</a></li>
-<li><a class="docs_version_url_2018.2" href="/zh_CN/2018.2/Manual/windowsholographic-emulation.html">2018.2</a></li>
-<li><a class="docs_version_url_2018.1" href="/zh_CN/2018.1/Manual/windowsholographic-emulation.html">2018.1</a></li>
-<li><a class="docs_version_url_2017.4" href="/zh_CN/2017.4/Manual/windowsholographic-emulation.html">2017.4</a></li>
-<li><a class="docs_version_url_2017.3" href="/zh_CN/2017.3/Manual/windowsholographic-emulation.html">2017.3</a></li>
-<li><a class="docs_version_url_2017.2" href="/zh_CN/2017.2/Manual/windowsholographic-emulation.html">2017.2</a></li>
-<li><a class="docs_version_url_2017.1" href="/zh_CN/2017.1/Manual/windowsholographic-emulation.html">2017.1</a></li>
-<li><a class="docs_version_url_560" href="/zh_CN/560/Manual/windowsholographic-emulation.html">5.6</a></li>
+<li><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/windowsholographic-emulation.html">2020.1</a></li>
+<li><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/windowsholographic-emulation.html">2019.3</a></li>
+<li><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/windowsholographic-emulation.html">2019.2</a></li>
+<li><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/windowsholographic-emulation.html">2019.1</a></li>
+<li><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/windowsholographic-emulation.html">2018.4</a></li>
+<li><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/windowsholographic-emulation.html">2018.3</a></li>
+<li><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/windowsholographic-emulation.html">2018.2</a></li>
+<li><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/windowsholographic-emulation.html">2018.1</a></li>
+<li><a class="docs_version_url_2017.4" href="/cn/2017.4/Manual/windowsholographic-emulation.html">2017.4</a></li>
+<li><a class="docs_version_url_2017.3" href="/cn/2017.3/Manual/windowsholographic-emulation.html">2017.3</a></li>
+<li><a class="docs_version_url_2017.2" href="/cn/2017.2/Manual/windowsholographic-emulation.html">2017.2</a></li>
+<li><a class="docs_version_url_2017.1" href="/cn/2017.1/Manual/windowsholographic-emulation.html">2017.1</a></li>
+<li><a class="docs_version_url_560" href="/cn/560/Manual/windowsholographic-emulation.html">5.6</a></li>
 </ul></div>
 </div>
 <ul class="nav-menu-items">
-<li class="menu-item"><a href="../Manual/index.html" class="selected">Manual</a></li>
-<li class="menu-item"><a href="../ScriptReference/index.html" class="">Scripting API</a></li>
+<li class="menu-item"><a href="../Manual/index.html" class="selected">手册</a></li>
+<li class="menu-item"><a href="../ScriptReference/index.html" class="">脚本 API</a></li>
 </ul>
 <div class="lang-switcher">
 <div class="current toggle" data-target=".lang-list">
-<div class="lbl">Language:
+<div class="lbl">语言:
         <span class="b">中文</span>
 </div>
 <div class="arrow"></div>
@@ -97,13 +107,14 @@
 <li><a data-lang="ja" href="/ja/560/Manual/windowsholographic-emulation.html">日本語</a></li>
 <li><a data-lang="es" href="/es/560/Manual/windowsholographic-emulation.html">Español</a></li>
 <li><a data-lang="kr" href="/kr/560/Manual/windowsholographic-emulation.html">한국어</a></li>
+<li><a data-lang="ru" href="/ru/560/Manual/windowsholographic-emulation.html">Русский</a></li>
 </ul></div>
 </div>
 </div></div>
 </div>
 <div id="master-wrapper" class="master-wrapper clear">
 <div id="sidebar" class="sidebar hidden"><div class="sidebar-wrap"><div class="content"><div class="sidebar-menu"><div class="toc">
-<h2>Manual</h2>
+<h2>手册</h2>
 <div class="version-switcher">
 <div class="current toggle" data-target=".version-list"><div class="version-number">
 <div class="d-inline-block">
@@ -113,16 +124,19 @@
 <div class="d-inline-block arrow"></div>
 </div></div>
 <div class="version-list" style="display:none;"><ul>
-<li><a class="docs_version_url_2019.1" href="/zh_CN/2019.1/Manual/windowsholographic-emulation.html">2019.1</a></li>
-<li><a class="docs_version_url_2018.4" href="/zh_CN/2018.4/Manual/windowsholographic-emulation.html">2018.4</a></li>
-<li><a class="docs_version_url_2018.3" href="/zh_CN/2018.3/Manual/windowsholographic-emulation.html">2018.3</a></li>
-<li><a class="docs_version_url_2018.2" href="/zh_CN/2018.2/Manual/windowsholographic-emulation.html">2018.2</a></li>
-<li><a class="docs_version_url_2018.1" href="/zh_CN/2018.1/Manual/windowsholographic-emulation.html">2018.1</a></li>
-<li><a class="docs_version_url_2017.4" href="/zh_CN/2017.4/Manual/windowsholographic-emulation.html">2017.4</a></li>
-<li><a class="docs_version_url_2017.3" href="/zh_CN/2017.3/Manual/windowsholographic-emulation.html">2017.3</a></li>
-<li><a class="docs_version_url_2017.2" href="/zh_CN/2017.2/Manual/windowsholographic-emulation.html">2017.2</a></li>
-<li><a class="docs_version_url_2017.1" href="/zh_CN/2017.1/Manual/windowsholographic-emulation.html">2017.1</a></li>
-<li><a class="docs_version_url_560" href="/zh_CN/560/Manual/windowsholographic-emulation.html">5.6</a></li>
+<li><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/windowsholographic-emulation.html">2020.1</a></li>
+<li><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/windowsholographic-emulation.html">2019.3</a></li>
+<li><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/windowsholographic-emulation.html">2019.2</a></li>
+<li><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/windowsholographic-emulation.html">2019.1</a></li>
+<li><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/windowsholographic-emulation.html">2018.4</a></li>
+<li><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/windowsholographic-emulation.html">2018.3</a></li>
+<li><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/windowsholographic-emulation.html">2018.2</a></li>
+<li><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/windowsholographic-emulation.html">2018.1</a></li>
+<li><a class="docs_version_url_2017.4" href="/cn/2017.4/Manual/windowsholographic-emulation.html">2017.4</a></li>
+<li><a class="docs_version_url_2017.3" href="/cn/2017.3/Manual/windowsholographic-emulation.html">2017.3</a></li>
+<li><a class="docs_version_url_2017.2" href="/cn/2017.2/Manual/windowsholographic-emulation.html">2017.2</a></li>
+<li><a class="docs_version_url_2017.1" href="/cn/2017.1/Manual/windowsholographic-emulation.html">2017.1</a></li>
+<li><a class="docs_version_url_560" href="/cn/560/Manual/windowsholographic-emulation.html">5.6</a></li>
 </ul></div>
 </div>
 <div class="clear"></div>
@@ -148,21 +162,21 @@
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<p>Holographic Emulation allows you to prototype, debug, and run Microsoft HoloLens projects directly in the Unity Editor rather than building and running the game every time you want to see the effect of a change. This vastly reduces time between iterations when developing holographic applications in Unity.</p>
+<p>Holographic Emulation（全息仿真）允许直接在 Unity Editor 中对 Microsoft HoloLens 项目进行原型设计、调试和运行，无需在每次希望查看更改效果时都要构建和运行游戏。这样可以极大缩短在 Unity 中开发全息应用程序时的迭代间隔时间。</p>
 
 <figure>
-<img src="../uploads/Main/HolographicEmulation-0.gif" alt="Holopgraphic Emulation: The Unity Editor runs as a holographic application ">
-<figcaption>Holopgraphic Emulation: The Unity Editor runs as a holographic application </figcaption>
+<img src="../uploads/Main/HolographicEmulation-0.gif" alt="Holopgraphic Emulation：Unity Editor 作为全息应用程序运行">
+<figcaption>Holopgraphic Emulation：Unity Editor 作为全息应用程序运行</figcaption>
 </figure>
 
-<p>Holographic Emulation has two different modes:</p>
+<p>Holographic Emulation 有两种不同模式：</p>
 
 <ul>
-<li><p><strong>Remote to Device:</strong> Using a connection to a Windows Holographic device, your application behaves as if it were deployed to that device, while really running in the Unity Editor on your host machine. See <a href="#RemoteToDevice">Remote to Device</a>, below, for more information.</p></li>
-<li><p><strong>Simulate in Editor:</strong> Your application runs on a simulated Holographic device directly in the Unity Editor, with no connection to a real-world Windows Holographic device. See <a href="#SimulateInEditor">Simulate in Editor</a>, below, for more information.</p></li>
+<li><p>__Remote to Device：__通过使用与 Windows Holographic 设备之间的连接，应用程序就像已经部署到该设备一样，而实际上是在主机上的 Unity Editor 中运行。请参阅下面的 <a href="#RemoteToDevice">Remote to Device</a> 以了解更多信息。</p></li>
+<li><p>__Simulate in Editor：__应用程序直接在 Unity Editor 中的模拟全息设备上运行，无需连接到真实的 Windows Holographic 设备。请参阅下面的 <a href="#SimulateInEditor">Simulate in Editor</a> 以了解更多信息。</p></li>
 </ul>
 
-<p>Holographic Emulation is supported on any machine running Windows 10 (with the Anniversary update) or later versions.</p>
+<p>Holographic Emulation 仅在运行 Windows 10（装有周年更新）或更高版本的机器上受支持。</p>
 
 <h3>准备开始</h3>
 
@@ -172,54 +186,55 @@
 <img src="../uploads/Main/HolographicEmulation-Open-1.png" alt="">
 </figure>
 
-<p>This opens the Holographic Emulation control window, containing the <strong>Emulation Mode</strong> drop-down menu. Keep this window visible during development; you need to be able to access its settings when you launch your application.</p>
+<p>随即将打开 Holographic Emulation 控制窗口，其中包含 <strong>Emulation Mode</strong> 下拉菜单。应在开发期间保持此窗口可见；在启动应用程序时需要访问其中的设置。</p>
 
 <figure>
-<img src="../uploads/Main/HolographicEmulation-ControlPanel-2.png" alt="Default Holographic Emulation control window ">
-<figcaption>Default <strong>Holographic Emulation</strong> control window
+<img src="../uploads/Main/HolographicEmulation-ControlPanel-2.png" alt="默认的 Holographic Emulation 控制窗口 ">
+<figcaption>默认的 <strong>Holographic Emulation</strong> 控制窗口
 </figcaption>
 </figure>
 
-<p><strong>Emulation Mode</strong> is set to <strong>None</strong> by default, which means that your application runs in the Editor without any of the Holographic API functionality. Change the <strong>Emulation Mode</strong> to <strong>Remote to Device</strong> or <strong>Simulate in Editor</strong> to enable that mode and begin Holographic Emulation.</p>
+<p>默认情况下，__Emulation Mode__ 设置为 <strong>None__，这意味着应用程序将在 Editor 中运行而不需要任何全息 API 功能。将 </strong>Emulation Mode__ 更改为 <strong>Remote to Device</strong> 或 <strong>Simulate in Editor</strong> 可启用该模式并开始全息仿真 (Holographic Emulation)。</p>
 
 <p><a name="RemoteToDevice"> </a> </p>
 
 <h2>Remote to Device</h2>
 
-<p>To use this, connect your machine running the Unity Editor (the “host machine”) to a Windows Holographic device (the “device”) (see <a href="#ConnectingYourDevice">Connecting your device</a>, below). Your application behaves as if it were deployed to that device, while really running in the Unity Editor on the host machine.</p>
+<p>要使用此模式，请将运行 Unity Editor 的计算机（简称“主机”）连接到 Windows Holographic 设备（简称“设备”）（请参阅下面的<a href="#ConnectingYourDevice">连接设备</a>）。应用程序就像已经部署到该设备上一样，而实际是在主机上的 Unity Editor 中运行。</p>
 
-<p>The Unity Editor has access to spatial sensor data and head tracking of the connected device. The Unity Editor Game View allows you to see what is being rendered on the device but not what the wearer of the device sees of the real world. (See an example in the image above titled ‘Holopgraphic Emulation: The Unity Editor runs as a hologrpahic application’.)</p>
+<p>Unity Editor 可访问所连接设备的空间传感器数据和头部跟踪。在 Unity Editor Game 视图中可以查看设备上渲染的内容，但不能看到设备的佩戴者看到的真实世界。（请参阅上文中标题为“Holopgraphic Emulation：Unity Editor 作为全息应用程序运行”的图中的示例。）</p>
 
-<p>Note that <strong>Remote to Device</strong> isn’t useful for validating performance because your application is running on the host machine, rather than the device itself, but it is a quick way to test development.</p>
+<p>请注意，__Remote to Device__ 对于验证性能没有用处，因为应用程序在主机上而不是在设备本身上运行，但它是快速测试开发的方法。</p>
 
-<p>To enable this mode in the Unity Editor, set the <strong>Emulation Mode</strong> to <strong>Remote to Device</strong>. The interface changes to reflect the additional options available.</p>
+<p>要在 Unity Editor 中启用此模式，请将 <strong>Emulation Mode</strong> 设置为 <strong>Remote to Device</strong>。界面将更改以反映可用的其他选项。</p>
 
 <figure>
-<img src="../uploads/Main/HolographicEmulation-RemoteToDevice-3.png" alt="Holographic Emulation control window with Remote to Device selected">
-<figcaption>Holographic Emulation control window with <strong>Remote to Device</strong> selected</figcaption>
+<img src="../uploads/Main/HolographicEmulation-RemoteToDevice-3.png" alt="Holographic Emulation 控制窗口中已选择 Remote to Device">
+<figcaption>Holographic Emulation 控制窗口中已选择 <strong>Remote to Device</strong></figcaption>
 </figure>
 
 <p><a name="ConnectingYourDevice"> </a></p>
 
-<h3>Connecting your device</h3>
+<h3>连接设备</h3>
 
 <figure>
-<img src="../uploads/Main/HolographicEmulation-RemotingPlayer-4.png" alt="The Holographic Remoting Player screen on your device ">
-<figcaption>The Holographic Remoting Player screen on your device
+<img src="../uploads/Main/HolographicEmulation-RemotingPlayer-4.png" alt="设备上的 Holographic Remoting Player 屏幕 ">
+<figcaption>设备上的 Holographic Remoting Player 屏幕
 </figcaption>
 </figure>
 
-<ol>
-<li><p>Install and run the Remoting Player, available from the <a href="https://www.microsoft.com/en-us/store/p/holographic-remoting-player/9nblggh4sv40">Windows Store</a>. When launched, the Remoting Player enters a waiting state and displays the IP address of the device on the Holographic Remoting Player screen. Find additional information about the Remoting Player, including how to enable connection diagnostics on the <a href="https://developer.microsoft.com/en-us/windows/holographic/holographic_remoting_player">Microsoft Windows Dev Center</a>.</p></li>
-<li><p>In the Holographic Emulation control window in the Unity Editor, enter the IP address of your device into the <strong>Remote Machine</strong> field. The drop-down button to the right of the field allows you to select recently used addresses.</p></li>
-<li><p>Press the <strong>Connect</strong> button. The connection status changes to a green light with a connected message. </p></li>
-<li><p>Now click <strong>Play</strong> in the Unity Editor to run your device remotely. You can pause, inspect GameObjects, and debug in the same way as running an app in the Editor; but with video, audio, and device input transmitted back and forth across the network between the host machine and the device.</p></li>
-</ol>
+<p>1.安装并运行从 <a href="https://www.microsoft.com/en-us/store/p/holographic-remoting-player/9nblggh4sv40">Windows 应用商店</a>获取的 Remoting Player。Remoting Player 在启动时进入等待状态，并在 Holographic Remoting Player 屏幕上显示设备的 IP 地址。有关 Remoting Player 的其他信息，包括如何启用连接诊断，请参阅 <a href="https://developer.microsoft.com/en-us/windows/holographic/holographic_remoting_player">Microsoft Windows 开发人员中心</a>。</p>
 
-<h3>Known limitations</h3>
+<p>2.在 Unity Editor 的 Holographic Emulation 控制窗口的 <strong>Remote Machine</strong> 字段中输入设备的 IP 地址。使用该字段右侧的下拉选单按钮可选择最近使用的地址。</p>
+
+<p>3.按 <strong>Connect</strong> 按钮。连接状态会更改为绿灯并显示已连接消息。</p>
+
+<p>4.现在单击 Unity Editor 中的 <strong>Play</strong> 以远程运行设备。可以暂停、检查游戏对象以及进行调试，就像在 Editor 中运行应用程序一样；但视频、音频和设备输入在主机和设备之间通过网络来回传输。</p>
+
+<h3>已知限制</h3>
 
 <ul>
-<li><p>Speech (<a href="https://docs.unity3d.com/ScriptReference/Windows.Speech.PhraseRecognizer.html">PhraseRecognizer</a>) is not supported via <strong>Remote to Device</strong>; instead, it intercepts speech from the host machine running the Unity Editor.</p></li>
+<li><p>在__Remote to Device__ 模式下不支持语音 (<a href="https://docs.unity3d.com/ScriptReference/Windows.Speech.PhraseRecognizer.html">PhraseRecognizer</a>)；相反，会拦截运行 Unity Editor 的主机发出的语音。</p></li>
 <li><p>当 <strong>Remote to Device</strong> 正在运行时，主机上的所有音频都会重定向到设备，包括来自应用程序外部的音频。</p></li>
 </ul>
 
@@ -227,19 +242,19 @@
 
 <h2>Simulate in Editor</h2>
 
-<p>Using this, your application runs on a simulated Holographic device directly in the Unity Editor with no connection to a real-world Windows Holographic device. This is useful for development for Windows Holographic if you don’t have access to a device. (Note that you do need to test on a device and not rely on the Emulator.)</p>
+<p>使用此模式时，应用程序直接在 Unity Editor 中的模拟全息设备上运行，无需连接到真实的 Windows Holographic 设备。在进行 Windows Holographic 的开发时，如果无法访问设备，此模式将非常有用。（请注意，的确需要在设备上进行测试，而不是依赖于模拟器。）</p>
 
-<p>To enable this mode, set the <strong>Emulation Mode</strong> to <strong>Simulate in Editor</strong> and press the <strong>Play</strong> button: Your application starts in a emulator built into the Unity Editor. </p>
+<p>要启用此模式，请将 <strong>Emulation Mode</strong> 设置为 <strong>Simulate in Editor__，然后按 </strong>Play__ 按钮：应用程序将在 Unity Editor 内置的模拟器中启动。</p>
 
-<p>In the Holographic control panel, use the <strong>Room</strong> drop-down menu to choose from one of five virtual rooms (the same as those supplied with the XDE HoloLens Emulator), and use the <strong>Gesture Hand</strong> drop-down menu to specify which virtual hand (left or right) performs gestures.</p>
+<p>在 Holographic 控制面板中，使用 <strong>Room</strong> 下拉菜单选择五个虚拟房间之一（与 XDE HoloLens 模拟器提供的选项相同），并使用 <strong>Gesture Hand</strong> 下拉菜单指定由哪个虚拟手（左手还是右手）执行手势。</p>
 
 <figure>
-<img src="../uploads/Main/HolographicEmulation-SimulateInEditor-5.png" alt="Holographic Emulation control window with Simulate in Editor selected ">
-<figcaption>Holographic Emulation control window with <strong>Simulate in Editor</strong> selected
+<img src="../uploads/Main/HolographicEmulation-SimulateInEditor-5.png" alt="Holographic Emulation 控制窗口中已选择 Simulate in Editor ">
+<figcaption>Holographic Emulation 控制窗口中已选择 <strong>Simulate in Editor</strong>
 </figcaption>
 </figure>
 
-<p>In <strong>Simulate in Editor</strong> mode, you need to use a game controller (such as an Xbox 360 or Xbox One controller) to control the virtual human player. If you don’t have a controller, the simulation still works, but you cannot move the virtual human player around. </p>
+<p>在 <strong>Simulate in Editor</strong> 模式中，需要使用游戏控制器（例如 Xbox 360 或 Xbox One 控制器）来控制虚拟人类玩家。如果没有控制器，模拟仍然有效，但无法移动虚拟人类玩家。</p>
 
 <table>
 <colgroup>
@@ -249,42 +264,42 @@
 
 <thead>
 <tr>
-	<th style="text-align:left;"><strong>Control:</strong></th>
+	<th style="text-align:left;"><strong>控制：</strong></th>
 	<th style="text-align:left;"><strong>功能：</strong></th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-	<td style="text-align:left;"><strong>Left stick</strong></td>
-	<td style="text-align:left;">Up and down to move virtual human player backward and forward; left and right to move left and right.</td>
+	<td style="text-align:left;"><strong>左摇杆</strong></td>
+	<td style="text-align:left;">上下方向可使虚拟人类玩家前后移动；左右方向可左右移动。</td>
 </tr>
 <tr>
-	<td style="text-align:left;"><strong>Right stick</strong></td>
-	<td style="text-align:left;">Up and down to pitch virtual human player’s head up and down; left and right to turn virtual human player left and right.</td>
+	<td style="text-align:left;"><strong>右摇杆</strong></td>
+	<td style="text-align:left;">上下方向可使虚拟人类玩家的头部上下俯仰；左右方向可使虚拟人类玩家左右转动。</td>
 </tr>
 <tr>
-	<td style="text-align:left;"><strong>D-pad</strong></td>
-	<td style="text-align:left;">Move the virtual human player up and down or roll head left and right.</td>
+	<td style="text-align:left;"><strong>方向键</strong></td>
+	<td style="text-align:left;">上下移动虚拟人类玩家或左右摇摆头部。</td>
 </tr>
 <tr>
-	<td style="text-align:left;"><strong>Left and right trigger buttons; A button</strong></td>
+	<td style="text-align:left;"><strong>左右触发按钮；A 按钮</strong></td>
 	<td style="text-align:left;">使用虚拟手执行点击手势。</td>
 </tr>
 <tr>
-	<td style="text-align:left;"><strong>Y button</strong></td>
-	<td style="text-align:left;">Reset the pitch and roll of the virtual human player’s head.</td>
+	<td style="text-align:left;"><strong>Y 按钮</strong></td>
+	<td style="text-align:left;">重置虚拟人类玩家头部的俯仰和摇摆。</td>
 </tr>
 </tbody>
 </table>
 
-<p>To use the game controller, the Unity Editor’s focus must be on the Game view. Click the Game view window once after doing anything else with the UI to return the focus to it.</p>
+<p>要使用游戏控制器，Unity Editor 必须聚焦在 Game 视图上。在使用 UI 执行任何其他操作后，单击 Game 视图窗口，将焦点返回到该窗口。</p>
 
-<h3>Known limitations</h3>
+<h3>已知限制</h3>
 
 <ul>
-<li><p>Most game controllers work with <strong>Simulate in Editor</strong> mode, as long as they are recognised by Windows and Unity; however, there may be some incompatibility with unsupported controllers.</p></li>
-<li><p>You can use <a href="https://docs.unity3d.com/550/Documentation/ScriptReference/VR.WSA.WebCam.PhotoCapture.html">PhotoCapture</a> in <strong>Simulate in Editor</strong> mode, but because there is no device present, you need to do this with your own local camera (such as an attached webcam). This means you cannot retrieve a matrix with <code>TryGetProjectionMatrix</code> or <code>TryGetCameraToWorldMatrix</code>, because a normal local camera cannot compute where it is in relation to the real world.</p></li>
+<li><p>大多数游戏控制器都使用 <strong>Simulate in Editor</strong> 模式，但前提是 Windows 和 Unity 能识别它们；不过，可能与不受支持的控制器存在某些不兼容性。</p></li>
+<li><p>可在 <strong>Simulate in Editor</strong> 模式下使用 <a href="https://docs.unity3d.com/550/Documentation/ScriptReference/VR.WSA.WebCam.PhotoCapture.html">PhotoCapture</a>，但由于缺少设备，需要使用您自己的本地摄像头（例如连接的网络摄像头）进行此操作。这意味着无法使用 <code>TryGetProjectionMatrix</code> 或 <code>TryGetCameraToWorldMatrix</code> 来检索矩阵，因为普通的本地摄像机无法计算自身与现实世界的相对位置。</p></li>
 </ul>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
@@ -299,7 +314,7 @@
 <div class="footer clear">
 <div class="copy">Copyright © 2017 Unity Technologies. Publication 5.6</div>
 <div class="menu">
-<a href="http://unity3d.com/learn">Tutorials</a><a href="http://answers.unity3d.com">Community Answers</a><a href="https://support.unity3d.com/hc/en-us">Knowledge Base</a><a href="http://forum.unity3d.com">Forums</a><a href="http://unity3d.com/asset-store">Asset Store</a>
+<a href="http://unity3d.com/learn">教程</a><a href="http://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="http://forum.unity3d.com">论坛</a><a href="http://unity3d.com/asset-store">Asset Store</a>
 </div>
 </div>
 <div></div>

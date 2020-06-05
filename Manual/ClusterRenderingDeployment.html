@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="no-js">
+<!DOCTYPE html><html class="no-js" lang="zh-cn">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -11,10 +11,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Deploying a Unity Cluster - Unity Manual">
-<title>Deploying a Unity Cluster - Unity Manual</title>
-<meta name="description" content="There are no special techniques involved in the build process. As long as you build the player with a Cluster-enabled Editor (it requires a special license), the player will have the Cluster-enabled features.">
-<meta property="og:description" content="There are no special techniques involved in the build process. As long as you build the player with a Cluster-enabled Editor (it requires a special license), the player will have the Cluster-enabled features.">
+<meta property="og:title" content="部署 Unity 集群 - Unity 手册">
+<title>部署 Unity 集群 - Unity 手册</title>
+<meta name="description" content="构建过程中不涉及特殊技术。只要使用支持集群的 Editor（需要特殊许可证）构建播放器，播放器就将具有支持集群的功能。">
+<meta property="og:description" content="构建过程中不涉及特殊技术。只要使用支持集群的 Editor（需要特殊许可证）构建播放器，播放器就将具有支持集群的功能。">
 <meta name="author" content="Unity Technologies">
 <link rel="shortcut icon" href="../StaticFiles/images/favicons/favicon.ico">
 <link rel="icon" type="image/png" href="../StaticFiles/images/favicons/favicon.png">
@@ -28,13 +28,20 @@
 <meta name="msapplication-TileImage" content="../StaticFiles/images/favicons/tileicon-144x144.png">
 <script>
       var docs_type = 'Manual';
-      var lang = 'zh_CN';
+      var lang = 'cn';
       var page = 'ClusterRenderingDeployment';
       if(!page) page = 'index';
       var version = '560';
-      var docs_versions = [{version: '2019.1',version_string: '2019.1'},{version: '2018.4',version_string: '2018.4'},{version: '2018.3',version_string: '2018.3'},{version: '2018.2',version_string: '2018.2'},{version: '2018.1',version_string: '2018.1'},{version: '2017.4',version_string: '2017.4'},{version: '2017.3',version_string: '2017.3'},{version: '2017.2',version_string: '2017.2'},{version: '2017.1',version_string: '2017.1'},{version: '5.6',version_string: '560'},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+      var docs_versions = [{version: '2020.1',version_string: '2020.1'},{version: '2019.3',version_string: '2019.3'},{version: '2019.2',version_string: '2019.2'},{version: '2019.1',version_string: '2019.1'},{version: '2018.4',version_string: '2018.4'},{version: '2018.3',version_string: '2018.3'},{version: '2018.2',version_string: '2018.2'},{version: '2018.1',version_string: '2018.1'},{version: '2017.4',version_string: '2017.4'},{version: '2017.3',version_string: '2017.3'},{version: '2017.2',version_string: '2017.2'},{version: '2017.1',version_string: '2017.1'},{version: '5.6',version_string: '560'},];</script><script type="text/javascript" src="../StaticFiles/js/jquery.js"></script><script type="text/javascript" src="../StaticFiles/js/core.js"></script><script type="text/javascript" src="../StaticFiles/js/jquery.sidebar.min.js"></script><script type="text/javascript" src="docdata/toc.js"></script><script type="text/javascript" src=""></script><script type="text/javascript" src="../StaticFiles/js/custom.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/core.css">
 <link rel="stylesheet" type="text/css" href="../StaticFiles/css/custom.css">
+<link rel="canonical" href="https://docs.unity3d.com/cn/560/Manual/ClusterRenderingDeployment.html">
+<link rel="alternate" href="https://docs.unity3d.com/en/560/Manual/ClusterRenderingDeployment.html" hreflang="en">
+<link rel="alternate" href="https://docs.unity3d.com/ja/560/Manual/ClusterRenderingDeployment.html" hreflang="ja">
+<link rel="alternate" href="https://docs.unity3d.com/es/560/Manual/ClusterRenderingDeployment.html" hreflang="es">
+<link rel="alternate" href="https://docs.unity3d.com/kr/560/Manual/ClusterRenderingDeployment.html" hreflang="ko">
+<link rel="alternate" href="https://docs.unity3d.com/ru/560/Manual/ClusterRenderingDeployment.html" hreflang="ru">
+<link rel="alternate" href="https://docs.unity3d.com/560/Documentation/Manual/ClusterRenderingDeployment.html" hreflang="x-default">
 </head>
 <body>
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5V25JL6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -44,11 +51,11 @@
 <div id="nav-open" for="nav-input"><span></span></div>
 <div class="logo"><a href="http://docs.unity3d.com"></a></div>
 <div class="search-form"><form action="30_search.html" method="get" class="apisearch">
-<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
+<input type="text" name="q" placeholder="搜索手册..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
 </form></div>
 <ul class="menu-items">
-<li class="menu-item"><a href="../Manual/index.html" class="selected">Manual</a></li>
-<li class="menu-item"><a href="../ScriptReference/index.html" class="">Scripting API</a></li>
+<li class="menu-item"><a href="../Manual/index.html" class="selected">手册</a></li>
+<li class="menu-item"><a href="../ScriptReference/index.html" class="">脚本 API</a></li>
 </ul>
 </div></div>
 <div class="more">
@@ -68,25 +75,28 @@
 <div class="d-inline-block arrow"></div>
 </div></div>
 <div class="version-list" style="display:none;"><ul>
-<li><a class="docs_version_url_2019.1" href="/zh_CN/2019.1/Manual/ClusterRenderingDeployment.html">2019.1</a></li>
-<li><a class="docs_version_url_2018.4" href="/zh_CN/2018.4/Manual/ClusterRenderingDeployment.html">2018.4</a></li>
-<li><a class="docs_version_url_2018.3" href="/zh_CN/2018.3/Manual/ClusterRenderingDeployment.html">2018.3</a></li>
-<li><a class="docs_version_url_2018.2" href="/zh_CN/2018.2/Manual/ClusterRenderingDeployment.html">2018.2</a></li>
-<li><a class="docs_version_url_2018.1" href="/zh_CN/2018.1/Manual/ClusterRenderingDeployment.html">2018.1</a></li>
-<li><a class="docs_version_url_2017.4" href="/zh_CN/2017.4/Manual/ClusterRenderingDeployment.html">2017.4</a></li>
-<li><a class="docs_version_url_2017.3" href="/zh_CN/2017.3/Manual/ClusterRenderingDeployment.html">2017.3</a></li>
-<li><a class="docs_version_url_2017.2" href="/zh_CN/2017.2/Manual/ClusterRenderingDeployment.html">2017.2</a></li>
-<li><a class="docs_version_url_2017.1" href="/zh_CN/2017.1/Manual/ClusterRenderingDeployment.html">2017.1</a></li>
-<li><a class="docs_version_url_560" href="/zh_CN/560/Manual/ClusterRenderingDeployment.html">5.6</a></li>
+<li><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/ClusterRenderingDeployment.html">2020.1</a></li>
+<li><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/ClusterRenderingDeployment.html">2019.3</a></li>
+<li><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/ClusterRenderingDeployment.html">2019.2</a></li>
+<li><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/ClusterRenderingDeployment.html">2019.1</a></li>
+<li><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/ClusterRenderingDeployment.html">2018.4</a></li>
+<li><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/ClusterRenderingDeployment.html">2018.3</a></li>
+<li><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/ClusterRenderingDeployment.html">2018.2</a></li>
+<li><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/ClusterRenderingDeployment.html">2018.1</a></li>
+<li><a class="docs_version_url_2017.4" href="/cn/2017.4/Manual/ClusterRenderingDeployment.html">2017.4</a></li>
+<li><a class="docs_version_url_2017.3" href="/cn/2017.3/Manual/ClusterRenderingDeployment.html">2017.3</a></li>
+<li><a class="docs_version_url_2017.2" href="/cn/2017.2/Manual/ClusterRenderingDeployment.html">2017.2</a></li>
+<li><a class="docs_version_url_2017.1" href="/cn/2017.1/Manual/ClusterRenderingDeployment.html">2017.1</a></li>
+<li><a class="docs_version_url_560" href="/cn/560/Manual/ClusterRenderingDeployment.html">5.6</a></li>
 </ul></div>
 </div>
 <ul class="nav-menu-items">
-<li class="menu-item"><a href="../Manual/index.html" class="selected">Manual</a></li>
-<li class="menu-item"><a href="../ScriptReference/index.html" class="">Scripting API</a></li>
+<li class="menu-item"><a href="../Manual/index.html" class="selected">手册</a></li>
+<li class="menu-item"><a href="../ScriptReference/index.html" class="">脚本 API</a></li>
 </ul>
 <div class="lang-switcher">
 <div class="current toggle" data-target=".lang-list">
-<div class="lbl">Language:
+<div class="lbl">语言:
         <span class="b">中文</span>
 </div>
 <div class="arrow"></div>
@@ -96,13 +106,14 @@
 <li><a data-lang="ja" href="/ja/560/Manual/ClusterRenderingDeployment.html">日本語</a></li>
 <li><a data-lang="es" href="/es/560/Manual/ClusterRenderingDeployment.html">Español</a></li>
 <li><a data-lang="kr" href="/kr/560/Manual/ClusterRenderingDeployment.html">한국어</a></li>
+<li><a data-lang="ru" href="/ru/560/Manual/ClusterRenderingDeployment.html">Русский</a></li>
 </ul></div>
 </div>
 </div></div>
 </div>
 <div id="master-wrapper" class="master-wrapper clear">
 <div id="sidebar" class="sidebar hidden"><div class="sidebar-wrap"><div class="content"><div class="sidebar-menu"><div class="toc">
-<h2>Manual</h2>
+<h2>手册</h2>
 <div class="version-switcher">
 <div class="current toggle" data-target=".version-list"><div class="version-number">
 <div class="d-inline-block">
@@ -112,16 +123,19 @@
 <div class="d-inline-block arrow"></div>
 </div></div>
 <div class="version-list" style="display:none;"><ul>
-<li><a class="docs_version_url_2019.1" href="/zh_CN/2019.1/Manual/ClusterRenderingDeployment.html">2019.1</a></li>
-<li><a class="docs_version_url_2018.4" href="/zh_CN/2018.4/Manual/ClusterRenderingDeployment.html">2018.4</a></li>
-<li><a class="docs_version_url_2018.3" href="/zh_CN/2018.3/Manual/ClusterRenderingDeployment.html">2018.3</a></li>
-<li><a class="docs_version_url_2018.2" href="/zh_CN/2018.2/Manual/ClusterRenderingDeployment.html">2018.2</a></li>
-<li><a class="docs_version_url_2018.1" href="/zh_CN/2018.1/Manual/ClusterRenderingDeployment.html">2018.1</a></li>
-<li><a class="docs_version_url_2017.4" href="/zh_CN/2017.4/Manual/ClusterRenderingDeployment.html">2017.4</a></li>
-<li><a class="docs_version_url_2017.3" href="/zh_CN/2017.3/Manual/ClusterRenderingDeployment.html">2017.3</a></li>
-<li><a class="docs_version_url_2017.2" href="/zh_CN/2017.2/Manual/ClusterRenderingDeployment.html">2017.2</a></li>
-<li><a class="docs_version_url_2017.1" href="/zh_CN/2017.1/Manual/ClusterRenderingDeployment.html">2017.1</a></li>
-<li><a class="docs_version_url_560" href="/zh_CN/560/Manual/ClusterRenderingDeployment.html">5.6</a></li>
+<li><a class="docs_version_url_2020.1" href="/cn/2020.1/Manual/ClusterRenderingDeployment.html">2020.1</a></li>
+<li><a class="docs_version_url_2019.3" href="/cn/2019.3/Manual/ClusterRenderingDeployment.html">2019.3</a></li>
+<li><a class="docs_version_url_2019.2" href="/cn/2019.2/Manual/ClusterRenderingDeployment.html">2019.2</a></li>
+<li><a class="docs_version_url_2019.1" href="/cn/2019.1/Manual/ClusterRenderingDeployment.html">2019.1</a></li>
+<li><a class="docs_version_url_2018.4" href="/cn/2018.4/Manual/ClusterRenderingDeployment.html">2018.4</a></li>
+<li><a class="docs_version_url_2018.3" href="/cn/2018.3/Manual/ClusterRenderingDeployment.html">2018.3</a></li>
+<li><a class="docs_version_url_2018.2" href="/cn/2018.2/Manual/ClusterRenderingDeployment.html">2018.2</a></li>
+<li><a class="docs_version_url_2018.1" href="/cn/2018.1/Manual/ClusterRenderingDeployment.html">2018.1</a></li>
+<li><a class="docs_version_url_2017.4" href="/cn/2017.4/Manual/ClusterRenderingDeployment.html">2017.4</a></li>
+<li><a class="docs_version_url_2017.3" href="/cn/2017.3/Manual/ClusterRenderingDeployment.html">2017.3</a></li>
+<li><a class="docs_version_url_2017.2" href="/cn/2017.2/Manual/ClusterRenderingDeployment.html">2017.2</a></li>
+<li><a class="docs_version_url_2017.1" href="/cn/2017.1/Manual/ClusterRenderingDeployment.html">2017.1</a></li>
+<li><a class="docs_version_url_560" href="/cn/560/Manual/ClusterRenderingDeployment.html">5.6</a></li>
 </ul></div>
 </div>
 <div class="clear"></div>
@@ -132,62 +146,62 @@
 <li><a href="UnityManual.html">Unity User Manual (5.6)</a></li>
 <li><a href="Graphics.html">图形</a></li>
 <li><a href="GraphicsOverview.html">图形概述</a></li>
-<li><a href="ClusterRendering.html">Cluster Rendering</a></li>
-<li>Deploying a Unity Cluster</li>
+<li><a href="ClusterRendering.html">集群渲染</a></li>
+<li>部署 Unity 集群</li>
 </ul></div>
 <div class="mb20"><div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
-<span class="prev"><a href="ClusterRendering.html"></a></span><div class="tip">Cluster Rendering</div>
+<span class="prev"><a href="ClusterRendering.html"></a></span><div class="tip">集群渲染</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="ClusterRenderingInput.html"></a></span><div class="tip">Input for Cluster Rendering</div>
+<span class="next"><a href="ClusterRenderingInput.html"></a></span><div class="tip">集群渲染的输入</div>
 </div>
 </div></div>
-<h1>Deploying a Unity Cluster</h1>
+<h1>部署 Unity 集群</h1>
 <!--BeginSwitchLink--><!--EndSwitchLink-->
 <div class="clear"></div>
 
-<h2>Building the Player</h2>
+<h2>构建播放器</h2>
 
-<p>There are no special techniques involved in the build process. As long as you build the player with a Cluster-enabled Editor (it requires a special license), the player will have the Cluster-enabled features.</p>
+<p>构建过程中不涉及特殊技术。只要使用支持集群的 Editor（需要特殊许可证）构建播放器，播放器就将具有支持集群的功能。</p>
 
-<h2>Launching the Cluster</h2>
+<h2>启动集群</h2>
 
-<p>Distribute a copy of the player to the Master Node machine, and each of the Client Node machines. It is highly recommended to use the same player files all the time to ensure the simulation will not vary. Prepare a batch file for each node to launch the application with the following command line arguments.</p>
+<p>将播放器的副本分发到主节点机器以及每台客户端节点机器。强烈建议始终使用相同的播放器文件，以确保模拟不会发生变化。为每个节点准备一个批处理文件，以便使用以下命令行参数启动应用程序。</p>
 
-<p>These arguments trigger the player to run in Unity Cluster mode:</p>
+<p>这些参数触发播放器以 Unity 集群模式运行：</p>
 
-<h3>Master node</h3>
+<h3>主节点</h3>
 
 <p><code>-server &lt;number of clients&gt; *:&lt;pubport&gt; *:* &lt;timeout&gt;</code></p>
 
 <ul>
-<li>Run this application as the master of the cluster network.</li>
-<li>Specify the number of clients that connect to the master. This does not include the master. The master does not proceed until the number of clients connected has reached the indicated amount.</li>
+<li>将此应用程序作为集群网络的主节点运行。</li>
+<li>指定连接到主节点的客户端节点数。这不包括主节点。在连接的客户端节点数量达到指定的数量之前，主节点不会继续。</li>
 <li>
-<code>timeout</code> is optional. You can use it to tell the server how long to wait for signals from the clients before assuming the network is disconnected.</li>
+<code>timeout</code> 是可选参数。此参数可用于告诉服务器在判定网络断开连接之前等待来自客户端的信号的时间。</li>
 </ul>
 
-<h3>Client node</h3>
+<h3>客户端节点</h3>
 
 <p><code>-client &lt;index&gt; &lt;masterip&gt;:&lt;pubport&gt; &lt;clientip&gt;:&lt;clientport&gt; &lt;timeout&gt;</code></p>
 
-<p>This run this application as one of the client nodes in the cluster network.</p>
+<p>这会将此应用程序作为集群网络中的客户端节点之一运行。</p>
 
 <ul>
 <li>
-<code>index</code> is the node index for this client in the network. Each Client Node should be assigned a unique index. The index normally relates to the node’s position in the display grid.</li>
+<code>index</code> 是此客户端在网络中的节点索引。应为每个客户端节点分配唯一索引。索引通常与节点在显示网格中的位置有关。</li>
 <li>
-<code>masterip</code> is the IP address of the Master Node machine. Do not use <code>localhost</code>, it does not resolve correctly.</li>
+<code>masterip</code> 是主节点机器的 IP 地址。不要使用 <code>localhost</code>，它无法正确解析。</li>
 <li>
-<code>clientip</code> and <code>clientport</code> is the IP address and port of the client machine. Use * for both for auto assignment, which is usually the case.</li>
+<code>clientip</code> 和 <code>clientport</code> 是客户端机器的 IP 地址和端口。使用 * 进行自动分配，通常情况下都会这么做。</li>
 <li>
-<code>pubport</code> has to be identical to Master Node’s setup.</li>
+<code>pubport</code> 必须与主节点的设置相同。</li>
 <li>
-<code>timeout</code> is optional. It can be used to tell the clients how long to wait for server’s signal before it assumes it has been disconnected from the network.</li>
+<code>timeout</code> 是可选参数。此参数可用于告诉客户端在判定服务器断开网络连接之前等待服务器信号的时间。</li>
 </ul>
 
-<h3>Additional Arguments</h3>
+<h3>其他参数</h3>
 
 <table>
 <colgroup>
@@ -208,15 +222,15 @@
 </tbody>
 </table>
 
-<h2>Testing locally</h2>
+<h2>本地测试</h2>
 
-<p>You can test cluster rendering by running multiple instances of your project on a single machine, launching each with the appropriate command line arguments as shown above.</p>
+<p>可以通过在一台计算机上运行项目的多个实例（使用适当的命令行参数启动每个实例，如上所示）来测试集群渲染。</p>
 <div class="nextprev clear">
 <div class="icon tt left mr1" data-distance="-40|-30|top">
-<span class="prev"><a href="ClusterRendering.html"></a></span><div class="tip">Cluster Rendering</div>
+<span class="prev"><a href="ClusterRendering.html"></a></span><div class="tip">集群渲染</div>
 </div>
 <div class="icon tt right" data-distance="-40|-30|top">
-<span class="next"><a href="ClusterRenderingInput.html"></a></span><div class="tip">Input for Cluster Rendering</div>
+<span class="next"><a href="ClusterRenderingInput.html"></a></span><div class="tip">集群渲染的输入</div>
 </div>
 </div>
 </div>
@@ -224,7 +238,7 @@
 <div class="footer clear">
 <div class="copy">Copyright © 2017 Unity Technologies. Publication 5.6</div>
 <div class="menu">
-<a href="http://unity3d.com/learn">Tutorials</a><a href="http://answers.unity3d.com">Community Answers</a><a href="https://support.unity3d.com/hc/en-us">Knowledge Base</a><a href="http://forum.unity3d.com">Forums</a><a href="http://unity3d.com/asset-store">Asset Store</a>
+<a href="http://unity3d.com/learn">教程</a><a href="http://answers.unity3d.com">社区答案</a><a href="https://support.unity3d.com/hc/en-us">知识库</a><a href="http://forum.unity3d.com">论坛</a><a href="http://unity3d.com/asset-store">Asset Store</a>
 </div>
 </div>
 <div></div>
